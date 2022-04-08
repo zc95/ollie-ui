@@ -1,13 +1,39 @@
 {
   "name": "walle-ui",
   "version": "0.1.0",
-  "private": true,
+  "description": "A Mobile UI Component Library for Vue.js.",
+  "main": "lib/walle-ui.common.js",
+  "files": [
+    "lib",
+    "src",
+    "packages"
+  ],
   "scripts": {
+    "lib": "vue-cli-service build --target lib --name walle-ui --dest lib src/index.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zc95/walle-ui.git",
+    "directory": "packages"
+  },
+  "homepage": "https://github.com/zc95/walle-ui",
+  "keywords": [
+    "ui",
+    "vue",
+    "vue2.6",
+    "mobile",
+    "frontend",
+    "component",
+    "components",
+    "library"
+  ],
+  "license": "ISC",
+  "bugs": "https://github.com/zc95/walle-ui/issues",
+  "author": "Zhang Cheng <571346800@qq.com>",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
