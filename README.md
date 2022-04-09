@@ -31,7 +31,7 @@ walle-ui 是一个 Vue 移动端 UI 组件库，适合在 vue2.X 技术栈项目
 npm i walle-ui
 ```
 
-## 基础使用
+## 完整引入
 
 ```js
 import Vue from 'vue';
@@ -40,7 +40,78 @@ import WalleUI from 'walle-ui';
 
 Vue.use(WalleUI);
 
-Vue.config.productionTip = false;
+new Vue({
+  render: h => h(App)
+}).$mount('#app');
+```
+
+## 按需引入
+
+### 按需引入方式一：babel-plugin-component
+
+```bash
+# 安装插件
+npm i babel-plugin-component -D
+```
+
+```js
+// 可以在 babel.config.js 中配置
+{
+  "plugins": [
+    [
+      "component",
+      {
+        "libraryName": "walle-ui",
+        "style": false
+      }
+    ]
+  ]
+}
+```
+
+### 按需引入方式二：babel-plugin-import
+
+```bash
+# 安装插件
+npm i babel-plugin-import -D
+```
+
+```js
+// 在.babelrc 中添加配置
+// 注意：webpack 1 无需设置 libraryDirectory
+{
+  "plugins": [
+    ["import", {
+      "libraryName": "vant",
+      "libraryDirectory": "es",
+      "style": true
+    }]
+  ]
+}
+
+// 对于使用 babel7 的用户，可以在 babel.config.js 中配置
+module.exports = {
+  plugins: [
+    ['import', {
+      libraryName: 'vant',
+      libraryDirectory: 'es',
+      style: true
+    }, 'vant']
+  ]
+};
+```
+
+### 引入所需组件
+
+接下来，如果你只希望引入部分组件，比如 Button 和 TabBar，那么需要在 main.js 中写入以下内容：
+
+```js
+import Vue from 'vue';
+import App from './App.vue';
+import { Button, TabBar } from 'walle-ui';
+
+Vue.use(Button);
+Vue.use(TabBar);
 
 new Vue({
   render: h => h(App)

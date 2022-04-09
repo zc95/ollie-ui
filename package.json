@@ -1,19 +1,23 @@
 {
   "name": "walle-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Mobile UI Component Library for Vue.js.",
   "main": "lib/walle-ui.common.js",
   "files": [
     "lib",
-    "src",
     "packages"
   ],
   "scripts": {
-    "lib": "vue-cli-service build --target lib --name walle-ui --dest lib src/index.js",
+    "bootstrap": "yarn || npm i",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "clean": "rimraf lib && rimraf packages/*/lib && rimraf test/**/coverage",
+    "build:lib-umd": "webpack --config build/webpack.umd.js",
+    "build:lib-common": "webpack --config build/webpack.common.js",
+    "build:lib-component": "webpack --config build/webpack.component.js",
+    "build:lib": "yarn clean && npm run lint && yarn build:lib-umd && yarn build:lib-common && yarn build:lib-component"
   },
   "repository": {
     "type": "git",
@@ -22,6 +26,10 @@
   },
   "homepage": "https://github.com/zc95/walle-ui",
   "keywords": [
+    "walle-ui",
+    "walleui",
+    "walle ui",
+    "Walle UI",
     "ui",
     "vue",
     "vue2.6",
@@ -34,12 +42,10 @@
   "license": "MIT",
   "bugs": "https://github.com/zc95/walle-ui/issues",
   "author": "Zhang Cheng <571346800@qq.com>",
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11",
-    "vue-router": "^3.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.7.1",
     "@vue/cli-plugin-babel": "~4.5.17",
     "@vue/cli-plugin-eslint": "~4.5.17",
     "@vue/cli-plugin-router": "~4.5.17",
@@ -48,12 +54,28 @@
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/test-utils": "^1.0.3",
     "babel-eslint": "^10.1.0",
+    "babel-loader": "^7.1.5",
+    "chalk": "^4.1.1",
+    "core-js": "^3.6.5",
+    "css-loader": "^2.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^6.2.2",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
     "prettier": "^2.2.1",
-    "vue-template-compiler": "^2.6.11"
+    "progress-bar-webpack-plugin": "^1.11.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.0.1",
+    "vue": "^2.6.11",
+    "vue-loader": "^15.7.2",
+    "vue-router": "^3.2.0",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.14.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "peerDependencies": {
+    "vue": "^2.5.1"
   }
 }

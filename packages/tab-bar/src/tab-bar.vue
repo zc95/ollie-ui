@@ -1,10 +1,10 @@
 <template>
-  <button :style="{ color }">测试按钮</button>
+  <button :style="{ color }">测试tab-bar</button>
 </template>
 
 <script>
 export default {
-  name: 'WaButton',
+  name: 'WaTabBar',
   props: {
     color: {
       type: String,

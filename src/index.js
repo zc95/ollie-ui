@@ -1,6 +1,7 @@
 import Button from '../packages/button/index';
+import TabBar from '../packages/tab-bar/index';
 
-const components = [Button];
+const components = [Button, TabBar];
 
 const install = function (Vue) {
   components.forEach(component => {
@@ -15,5 +16,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  Button
+  Button,
+  TabBar
 };
