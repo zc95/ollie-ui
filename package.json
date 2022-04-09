@@ -31,7 +31,7 @@
     "components",
     "library"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "bugs": "https://github.com/zc95/walle-ui/issues",
   "author": "Zhang Cheng <571346800@qq.com>",
   "dependencies": {
