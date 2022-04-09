@@ -27,8 +27,6 @@ walle-ui 是一个 Vue 移动端 UI 组件库，适合在 vue2.X 技术栈项目
 
 ## 安装
 
-目前组件库已发布一期组件的测试版本，还在快速迭代，注意留意版本变化
-
 ```bash
 npm i walle-ui
 ```
@@ -38,8 +36,8 @@ npm i walle-ui
 ```js
 import Vue from 'vue';
 import App from './App.vue';
-
 import WalleUI from 'walle-ui';
+
 Vue.use(WalleUI);
 
 Vue.config.productionTip = false;
