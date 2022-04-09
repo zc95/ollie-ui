@@ -14,10 +14,11 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "clean": "rimraf lib && rimraf packages/*/lib && rimraf test/**/coverage",
+    "build:entry": "node build/bin/build-entry.js",
     "build:lib-umd": "webpack --config build/webpack.umd.js",
     "build:lib-common": "webpack --config build/webpack.common.js",
     "build:lib-component": "webpack --config build/webpack.component.js",
-    "build:lib": "yarn clean && npm run lint && yarn build:lib-umd && yarn build:lib-common && yarn build:lib-component"
+    "build:lib": "npm run clean && npm run build:entry && npm run lint && npm run build:lib-umd && npm run build:lib-common && npm run build:lib-component"
   },
   "repository": {
     "type": "git",
@@ -42,7 +43,9 @@
   "license": "MIT",
   "bugs": "https://github.com/zc95/walle-ui/issues",
   "author": "Zhang Cheng <571346800@qq.com>",
-  "dependencies": {},
+  "dependencies": {
+    "uppercamelcase": "^3.0.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.7.1",
@@ -61,6 +64,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^6.2.2",
+    "json-templater": "^1.2.0",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
     "prettier": "^2.2.1",

@@ -1,3 +1,5 @@
+// 组件单独打包（为了支持按需引入）
+
 const path = require('path');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
