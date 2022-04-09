@@ -14,11 +14,12 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "clean": "rimraf lib && rimraf packages/*/lib && rimraf test/**/coverage",
+    "build:com": "node build/bin/build-components-json.js",
     "build:entry": "node build/bin/build-entry.js",
     "build:lib-umd": "webpack --config build/webpack.umd.js",
     "build:lib-common": "webpack --config build/webpack.common.js",
     "build:lib-component": "webpack --config build/webpack.component.js",
-    "build:lib": "npm run clean && npm run build:entry && npm run lint && npm run build:lib-umd && npm run build:lib-common && npm run build:lib-component"
+    "build:lib": "npm run clean && npm run build:com && npm run build:entry && npm run lint && npm run build:lib-umd && npm run build:lib-common && npm run build:lib-component"
   },
   "repository": {
     "type": "git",
