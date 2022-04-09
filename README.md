@@ -5,7 +5,6 @@
 [![stars](https://img.shields.io/github/stars/zc95/walle-ui?style=flat-square&logo=GitHub)](https://github.com/zc95/walle-ui)
 [![forks](https://img.shields.io/github/forks/zc95/walle-ui?style=flat-square&logo=GitHub)](https://github.com/zc95/walle-ui)
 [![issues](https://img.shields.io/github/issues/zc95/walle-ui?style=flat-square&logo=GitHub)](https://github.com/zc95/walle-ui/issues)
-[![release](https://img.shields.io/github/v/release/zc95/walle-ui?style=flat-square)](https://gitee.com/xuqu/uView/releases)
 [![license](https://img.shields.io/github/license/zc95/walle-ui?style=flat-square)](https://en.wikipedia.org/wiki/MIT_License)
 
 walle-ui 是一个 Vue 移动端 UI 组件库，适合在 vue2.X 技术栈项目中使用。
