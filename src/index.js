@@ -17,7 +17,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default {
-  version: '1.0.1',
+  version: '1.0.2',
   install,
   Button,
   TabBar

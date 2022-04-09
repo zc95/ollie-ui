@@ -1,6 +1,6 @@
 {
   "name": "walle-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Mobile UI Component Library for Vue.js.",
   "main": "lib/walle-ui.common.js",
   "files": [
@@ -44,9 +44,7 @@
   "license": "MIT",
   "bugs": "https://github.com/zc95/walle-ui/issues",
   "author": "Zhang Cheng <571346800@qq.com>",
-  "dependencies": {
-    "uppercamelcase": "^3.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.7.1",
@@ -71,6 +69,7 @@
     "prettier": "^2.2.1",
     "progress-bar-webpack-plugin": "^1.11.0",
     "style-loader": "^0.23.1",
+    "uppercamelcase": "^3.0.0",
     "url-loader": "^1.0.1",
     "vue": "^2.6.11",
     "vue-loader": "^15.7.2",
