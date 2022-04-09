@@ -82,9 +82,9 @@ npm i babel-plugin-import -D
 {
   "plugins": [
     ["import", {
-      "libraryName": "vant",
-      "libraryDirectory": "es",
-      "style": true
+      "libraryName": "walle-ui",
+      "libraryDirectory": "lib",
+      "style": false
     }]
   ]
 }
@@ -93,10 +93,10 @@ npm i babel-plugin-import -D
 module.exports = {
   plugins: [
     ['import', {
-      libraryName: 'vant',
-      libraryDirectory: 'es',
-      style: true
-    }, 'vant']
+      libraryName: 'walle-ui',
+      libraryDirectory: 'lib',
+      style: false
+    }, 'walle-ui']
   ]
 };
 ```
