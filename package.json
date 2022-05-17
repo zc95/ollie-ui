@@ -1,6 +1,6 @@
 {
   "name": "walle-ui",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Mobile UI Component Library for Vue.js.",
   "main": "lib/walle-ui.common.js",
   "files": [
