@@ -13,7 +13,7 @@ const webpackConfig = {
   output: {
     path: path.resolve(process.cwd(), './lib'),
     publicPath: '/dist/',
-    filename: '[name]/index.js',
+    filename: '[name].js',
     chunkFilename: '[id].js',
     libraryTarget: 'commonjs2'
   },

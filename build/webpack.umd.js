@@ -21,7 +21,8 @@ module.exports = {
     libraryExport: 'default',
     library: 'WALLE',
     umdNamedDefine: true,
-    globalObject: "typeof self !== 'undefined' ? self : this"
+    // eslint-disable-next-line prettier/prettier
+    globalObject: 'typeof self !== \'undefined\' ? self : this'
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],

@@ -1,7 +1,6 @@
 // 一些配置
 
 var path = require('path');
-var fs = require('fs');
 var nodeExternals = require('webpack-node-externals');
 var Components = require('../components.json');
 
