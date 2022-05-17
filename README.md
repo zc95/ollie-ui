@@ -117,3 +117,23 @@ new Vue({
   render: h => h(App)
 }).$mount('#app');
 ```
+
+或者你只想在某个页面单独引入：
+
+```html
+<template>
+  <div>
+    <wa-button></wa-button>
+  </div>
+</template>
+
+<script>
+import { Button } from 'walle-ui';
+
+export default {
+  components: {
+    'wa-button': Button
+  }
+};
+</script>
+```
