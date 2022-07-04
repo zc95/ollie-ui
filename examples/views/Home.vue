@@ -11,7 +11,7 @@
     <ol-button disabled>禁用</ol-button>
     <ol-button type="danger" disabled>禁用</ol-button>
 
-    <h3>Switch 开关</h3>
+    <h3>Switch 开关 {{ checked }}</h3>
     <ol-switch v-model="checked"></ol-switch>
   </div>
 </template>
@@ -22,8 +22,8 @@ export default {
   data() {
     return {
       checked: false
-    }
-  },
+    };
+  }
 };
 </script>
 

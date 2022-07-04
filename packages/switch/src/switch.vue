@@ -1,5 +1,5 @@
 <template>
-  <button :style="{ color }">测试tab-bar</button>
+  <span>1</span>
 </template>
 
 <script>
