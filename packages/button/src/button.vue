@@ -6,7 +6,7 @@
     :type="nativeType"
     :class="[
       type ? 'ol-button--' + type : '',
-      size ? 'ol-button--' + size : '',
+      size ? 'ol-button-size--' + size : '',
       {
         'is-disabled': disabled,
         'is-loading': loading,
@@ -90,12 +90,12 @@ export default {
     background-color: #e34d59;
   }
 
-  &--small {
+  &-size--small {
     line-height: 22px;
     height: 36px;
     font-size: 14px;
   }
-  &--large {
+  &-size--large {
     line-height: 24px;
     height: 44px;
     font-size: 16px;
