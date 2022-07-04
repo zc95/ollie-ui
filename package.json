@@ -1,6 +1,6 @@
 {
   "name": "ollie-ui",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A Mobile UI Component Library for Vue.js.",
   "main": "lib/ollie-ui.common.js",
   "files": [
@@ -14,12 +14,13 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "clean": "rimraf lib && rimraf packages/*/lib && rimraf test/**/coverage",
+    "build:style": "node build/bin/gen-cssfile && gulp build --gulpfile packages/theme-chalk/gulpfile.js && cp-cli packages/theme-chalk/lib lib/theme-chalk",
     "build:com": "node build/bin/build-components-json.js",
     "build:entry": "node build/bin/build-entry.js",
     "build:lib-umd": "webpack --config build/webpack.umd.js",
     "build:lib-common": "webpack --config build/webpack.common.js",
     "build:lib-component": "webpack --config build/webpack.component.js",
-    "build:lib": "npm run clean && npm run build:com && npm run build:entry && npm run lint && npm run build:lib-umd && npm run build:lib-common && npm run build:lib-component"
+    "build:lib": "npm run clean && npm run build:style && npm run build:com && npm run build:entry && npm run lint && npm run build:lib-umd && npm run build:lib-common && npm run build:lib-component"
   },
   "repository": {
     "type": "git",
@@ -78,7 +79,12 @@
     "vue-template-compiler": "^2.6.11",
     "webpack": "^4.14.0",
     "webpack-cli": "^3.0.8",
-    "webpack-node-externals": "^1.7.2"
+    "webpack-node-externals": "^1.7.2",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-less": "^4.0.1",
+    "cp-cli": "^1.0.2"
   },
   "peerDependencies": {
     "vue": "^2.5.1"

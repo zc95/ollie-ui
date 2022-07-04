@@ -11,18 +11,21 @@ async function generate(dirpath) {
   const componentMap = {};
 
   // 获取 packages 下的所有目录
-  const dir = readdirSync(dirpath);
+  let dir = readdirSync(dirpath);
 
   // 遍历 packages 下的所有目录
   console.log(chalk.magenta('正在读取 packages/ 下的所有目录...'));
+
+  // 过滤掉样式文件夹
+  dir = dir.filter(item => item != 'theme-chalk');
+
+  // 遍历写入
   for await (const dirent of dir) {
     let filePath = path.resolve(dirpath, dirent);
 
     if (statSync(filePath).isDirectory()) {
-      const pathsArr = filePath.split('/');
-      const comName = pathsArr[pathsArr.length - 1];
-      componentMap[comName] = `./packages/${comName}/index.js`;
-      console.log(chalk.green(comName));
+      componentMap[dirent] = `./packages/${dirent}/index.js`;
+      console.log(chalk.green(dirent));
     }
   }
 

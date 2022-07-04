@@ -1,0 +1,54 @@
+.ol-switch {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: 0;
+
+  &__node {
+    display: inline-block;
+    position: relative;
+    width: 44px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 15px;
+    vertical-align: middle;
+    border: 0;
+    background-color: #c5c5c5;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease-in-out;
+
+    &::after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      border: 0;
+      border-radius: 100%;
+      background-color: #fff;
+      box-shadow: 0 0 4px #0003;
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      cursor: pointer;
+      transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
+    }
+  }
+
+  &.is-checked {
+    .ol-switch__node {
+      background-color: #0052d9;
+      &:after {
+        left: 22px;
+      }
+    }
+  }
+
+  &.is-disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+  }
+}
