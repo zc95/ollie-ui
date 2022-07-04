@@ -3,7 +3,8 @@
     class="ol-switch"
     :class="[
       {
-        'is-checked': value
+        'is-checked': value,
+        'is-disabled': disabled
       }
     ]"
     @click.prevent="switchValue"
@@ -23,10 +24,12 @@ export default {
     value: {
       type: Boolean,
       default: false
-    }
+    },
+    disabled: Boolean
   },
   methods: {
     switchValue() {
+      if (this.disabled) return;
       this.$emit('change', !this.value);
     }
   }
@@ -81,6 +84,11 @@ export default {
         left: 22px;
       }
     }
+  }
+
+  &.is-disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
   }
 }
 </style>

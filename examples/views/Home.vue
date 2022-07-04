@@ -12,7 +12,8 @@
     <ol-button type="danger" disabled>禁用</ol-button>
 
     <h3>Switch 开关 checked: {{ checked }}</h3>
-    <ol-switch v-model="checked"></ol-switch>
+    <p>正常：<ol-switch v-model="checked"></ol-switch></p>
+    <p>禁用：<ol-switch v-model="checked" disabled></ol-switch></p>
   </div>
 </template>
 
@@ -21,7 +22,7 @@ export default {
   name: 'Home',
   data() {
     return {
-      checked: false
+      checked: true
     };
   }
 };
