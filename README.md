@@ -15,11 +15,12 @@ ollie-ui 是一个 Vue 移动端 UI 组件库，适合在 vue2.X 技术栈项目
 - 完善的文档和示例
 - 支持按需加载
 - 移动端适配
-- 主题色配置
 
 ## 组件
 
 - [开发中] Button 按钮
+- [开发中] Switch 开关
+- [开发中] Tag 标签
 
 ## 安装
 
@@ -35,6 +36,7 @@ import App from './App.vue';
 import OllieUI from 'ollie-ui';
 
 Vue.use(OllieUI);
+import 'ollie-ui/lib/theme-chalk/index.css';
 
 new Vue({
   render: h => h(App)
