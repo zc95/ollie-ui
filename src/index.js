@@ -2,8 +2,9 @@
 
 import Button from '../packages/button/index.js';
 import Switch from '../packages/switch/index.js';
+import Tag from '../packages/tag/index.js';
 
-const components = [Button, Switch];
+const components = [Button, Switch, Tag];
 
 const install = function (Vue) {
   components.forEach(component => {
@@ -20,5 +21,6 @@ export default {
   version: '1.0.1',
   install,
   Button,
-  Switch
+  Switch,
+  Tag
 };

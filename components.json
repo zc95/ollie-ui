@@ -1,4 +1,5 @@
 {
   "button": "./packages/button/index.js",
-  "tab-bar": "./packages/tab-bar/index.js"
+  "switch": "./packages/switch/index.js",
+  "tag": "./packages/tag/index.js"
 }
