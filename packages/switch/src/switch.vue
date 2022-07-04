@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'WaTabBar',
+  name: 'OlSwitch',
   props: {
     color: {
       type: String,

@@ -20,10 +20,6 @@ ollie-ui 是一个 Vue 移动端 UI 组件库，适合在 vue2.X 技术栈项目
 ## 组件
 
 - [开发中] Button 按钮
-- [开发中] Popup 弹出层
-- [开发中] Dialog 模态窗
-- [开发中] ActionSheet 动作面板
-- [开发中] TabBar 选项卡
 
 ## 安装
 
