@@ -11,7 +11,7 @@
     <ol-button disabled>禁用</ol-button>
     <ol-button type="danger" disabled>禁用</ol-button>
 
-    <h3>Switch 开关 {{ checked }}</h3>
+    <h3>Switch 开关 checked: {{ checked }}</h3>
     <ol-switch v-model="checked"></ol-switch>
   </div>
 </template>
@@ -28,6 +28,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
+h3 {
+  margin: 40px 0 10px;
+}
 /deep/ .ol-button {
   margin: 5px;
 }
