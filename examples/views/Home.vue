@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <wa-button color="red"></wa-button>
-    <wa-tab-bar color="red"></wa-tab-bar>
+    <ol-button color="red"></ol-button>
+    <ol-tab-bar color="red"></ol-tab-bar>
   </div>
 </template>
 

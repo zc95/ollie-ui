@@ -19,7 +19,7 @@ module.exports = {
     chunkFilename: '[id].js',
     libraryTarget: 'umd',
     libraryExport: 'default',
-    library: 'WALLE',
+    library: 'OLLIE',
     umdNamedDefine: true,
     // eslint-disable-next-line prettier/prettier
     globalObject: 'typeof self !== \'undefined\' ? self : this'

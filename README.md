@@ -1,13 +1,13 @@
-# walle-ui
+# ollie-ui
 
 组件库还在搭建中，暂时还不能投入使用！！！
 
-[![stars](https://img.shields.io/github/stars/zc95/walle-ui?style=flat-square&logo=GitHub)](https://github.com/zc95/walle-ui)
-[![forks](https://img.shields.io/github/forks/zc95/walle-ui?style=flat-square&logo=GitHub)](https://github.com/zc95/walle-ui)
-[![issues](https://img.shields.io/github/issues/zc95/walle-ui?style=flat-square&logo=GitHub)](https://github.com/zc95/walle-ui/issues)
-[![license](https://img.shields.io/github/license/zc95/walle-ui?style=flat-square)](https://en.wikipedia.org/wiki/MIT_License)
+[![stars](https://img.shields.io/github/stars/zc95/ollie-ui?style=flat-square&logo=GitHub)](https://github.com/zc95/ollie-ui)
+[![forks](https://img.shields.io/github/forks/zc95/ollie-ui?style=flat-square&logo=GitHub)](https://github.com/zc95/ollie-ui)
+[![issues](https://img.shields.io/github/issues/zc95/ollie-ui?style=flat-square&logo=GitHub)](https://github.com/zc95/ollie-ui/issues)
+[![license](https://img.shields.io/github/license/zc95/ollie-ui?style=flat-square)](https://en.wikipedia.org/wiki/MIT_License)
 
-walle-ui 是一个 Vue 移动端 UI 组件库，适合在 vue2.X 技术栈项目中使用。
+ollie-ui 是一个 Vue 移动端 UI 组件库，适合在 vue2.X 技术栈项目中使用。
 
 - 提供 20+ 高质量组件，覆盖移动端各类场景
 - 灵活扩展，丰富的属性配置
@@ -28,7 +28,7 @@ walle-ui 是一个 Vue 移动端 UI 组件库，适合在 vue2.X 技术栈项目
 ## 安装
 
 ```bash
-npm i walle-ui
+npm i ollie-ui
 ```
 
 ## 完整引入
@@ -36,9 +36,9 @@ npm i walle-ui
 ```js
 import Vue from 'vue';
 import App from './App.vue';
-import WalleUI from 'walle-ui';
+import OllieUI from 'ollie-ui';
 
-Vue.use(WalleUI);
+Vue.use(OllieUI);
 
 new Vue({
   render: h => h(App)
@@ -61,7 +61,7 @@ npm i babel-plugin-component -D
     [
       "component",
       {
-        "libraryName": "walle-ui",
+        "libraryName": "ollie-ui",
         "style": false
       }
     ]
@@ -82,7 +82,7 @@ npm i babel-plugin-import -D
 {
   "plugins": [
     ["import", {
-      "libraryName": "walle-ui",
+      "libraryName": "ollie-ui",
       "libraryDirectory": "lib",
       "style": false
     }]
@@ -93,10 +93,10 @@ npm i babel-plugin-import -D
 module.exports = {
   plugins: [
     ['import', {
-      libraryName: 'walle-ui',
+      libraryName: 'ollie-ui',
       libraryDirectory: 'lib',
       style: false
-    }, 'walle-ui']
+    }, 'ollie-ui']
   ]
 };
 ```
@@ -108,7 +108,7 @@ module.exports = {
 ```js
 import Vue from 'vue';
 import App from './App.vue';
-import { Button, TabBar } from 'walle-ui';
+import { Button, TabBar } from 'ollie-ui';
 
 Vue.use(Button);
 Vue.use(TabBar);
@@ -123,16 +123,16 @@ new Vue({
 ```html
 <template>
   <div>
-    <wa-button></wa-button>
+    <o-button></o-button>
   </div>
 </template>
 
 <script>
-import { Button } from 'walle-ui';
+import { Button } from 'ollie-ui';
 
 export default {
   components: {
-    'wa-button': Button
+    'ol-button': Button
   }
 };
 </script>

@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
-import WalleUI from '../src/index.js';
+import OllieUI from '../src/index.js';
 
-Vue.use(WalleUI);
+Vue.use(OllieUI);
 
 Vue.config.productionTip = false;
 

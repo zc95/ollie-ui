@@ -7,7 +7,7 @@ var Components = require('../components.json');
 var externals = {};
 
 Object.keys(Components).forEach(function (key) {
-  externals[`walle-ui/packages/${key}`] = `walle-ui/lib/${key}`;
+  externals[`ollie-ui/packages/${key}`] = `ollie-ui/lib/${key}`;
 });
 
 externals = [
@@ -26,7 +26,7 @@ exports.alias = {
   main: path.resolve(__dirname, '../src'),
   packages: path.resolve(__dirname, '../packages'),
   examples: path.resolve(__dirname, '../examples'),
-  'walle-ui': path.resolve(__dirname, '../')
+  'ollie-ui': path.resolve(__dirname, '../')
 };
 
 exports.vue = {

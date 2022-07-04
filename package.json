@@ -1,8 +1,8 @@
 {
-  "name": "walle-ui",
-  "version": "1.0.6",
+  "name": "ollie-ui",
+  "version": "1.0.1",
   "description": "A Mobile UI Component Library for Vue.js.",
-  "main": "lib/walle-ui.common.js",
+  "main": "lib/ollie-ui.common.js",
   "files": [
     "lib",
     "packages"
@@ -23,15 +23,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zc95/walle-ui.git",
+    "url": "https://github.com/zc95/ollie-ui.git",
     "directory": "packages"
   },
-  "homepage": "https://github.com/zc95/walle-ui",
+  "homepage": "https://github.com/zc95/ollie-ui",
   "keywords": [
-    "walle-ui",
-    "walleui",
-    "walle ui",
-    "Walle UI",
+    "ollie-ui",
+    "ollieui",
+    "ollie ui",
+    "Ollie UI",
     "ui",
     "vue",
     "vue2.6",
@@ -42,7 +42,7 @@
     "library"
   ],
   "license": "MIT",
-  "bugs": "https://github.com/zc95/walle-ui/issues",
+  "bugs": "https://github.com/zc95/ollie-ui/issues",
   "author": "Zhang Cheng <571346800@qq.com>",
   "dependencies": {},
   "devDependencies": {
@@ -68,6 +68,7 @@
     "less-loader": "^5.0.0",
     "prettier": "^2.2.1",
     "progress-bar-webpack-plugin": "^1.11.0",
+    "rimraf": "^3.0.2",
     "style-loader": "^0.23.1",
     "uppercamelcase": "^3.0.0",
     "url-loader": "^1.0.1",

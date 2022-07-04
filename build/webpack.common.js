@@ -14,10 +14,10 @@ module.exports = {
   output: {
     path: path.resolve(process.cwd(), './lib'),
     publicPath: '/dist/',
-    filename: 'walle-ui.common.js',
+    filename: 'ollie-ui.common.js',
     chunkFilename: '[id].js',
     libraryExport: 'default',
-    library: 'WALLE',
+    library: 'OLLIE',
     libraryTarget: 'commonjs2'
   },
   resolve: {

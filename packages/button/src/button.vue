@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'WaButton',
+  name: 'OlButton',
   props: {
     color: {
       type: String,
