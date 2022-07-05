@@ -101,15 +101,15 @@ module.exports = {
 
 ### 引入所需组件
 
-接下来，如果你只希望引入部分组件，比如 Button 和 TabBar，那么需要在 main.js 中写入以下内容：
+接下来，如果你只希望引入部分组件，比如 Button 和 Tag，那么需要在 main.js 中写入以下内容：
 
 ```js
 import Vue from 'vue';
 import App from './App.vue';
-import { Button, TabBar } from 'ollie-ui';
+import { Button, Tag } from 'ollie-ui';
 
 Vue.use(Button);
-Vue.use(TabBar);
+Vue.use(Tag);
 
 new Vue({
   render: h => h(App)
@@ -121,7 +121,7 @@ new Vue({
 ```html
 <template>
   <div>
-    <o-button></o-button>
+    <ol-button></ol-button>
   </div>
 </template>
 
